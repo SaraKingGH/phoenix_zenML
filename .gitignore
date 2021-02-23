@@ -1,0 +1,6 @@
+# ZenML
+.zenml/
+# Mac
+.DS_Store
+# Files
+pipelines/*.yaml
