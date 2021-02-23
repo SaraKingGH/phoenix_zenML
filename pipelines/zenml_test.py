@@ -6,10 +6,10 @@ from zenml.core.steps.split.random_split import RandomSplit
 from zenml.core.steps.preprocesser.standard_preprocesser.standard_preprocesser import StandardPreprocesser
 from zenml.core.steps.trainer.tensorflow_trainers.tf_ff_trainer import FeedForwardTrainer
 
-training_pipeline = TrainingPipeline(name='Quickstart2')
+training_pipeline = TrainingPipeline(name='Quickstart')
 
 # Add a datasource. This will automatically track and version it.
-ds = CSVDatasource(name='Pima Indians Diabetes Dataset2',
+ds = CSVDatasource(name='Pima Indians Diabetes Dataset',
                    path='gs://zenml_quickstart/diabetes.csv')
 training_pipeline.add_datasource(ds)
 
